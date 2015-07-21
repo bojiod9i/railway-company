@@ -5,16 +5,17 @@ import ru.tsystems.railway.domain.AbstractDomainEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "EMPLOYEE")
-public class Employee extends AbstractDomainEntity {
+public class Employee extends AbstractDomainEntity implements Serializable {
 
     @Column(name = "LOGIN")
     private String login;
 
     @Column(name = "PASSWORD")
-    private Byte[] password;
+    private String password;
 
     public String getLogin() {
         return login;
@@ -24,11 +25,11 @@ public class Employee extends AbstractDomainEntity {
         this.login = login;
     }
 
-    public Byte[] getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(Byte[] password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

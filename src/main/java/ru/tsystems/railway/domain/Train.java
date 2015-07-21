@@ -8,10 +8,18 @@ import java.util.Set;
 public class Train extends AbstractDomainEntity {
 
     @OneToMany(mappedBy = "train", fetch = FetchType.EAGER)
+    @OrderBy("departureDate ASC")
     private Set<Schedule> schedules;
 
     @Column(name = "SEATS")
     private Integer seats;
+
+    public Train() {
+    }
+
+    public Train(Integer seats) {
+        this.seats = seats;
+    }
 
     public Set<Schedule> getSchedules() {
         return schedules;

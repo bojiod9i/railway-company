@@ -10,13 +10,16 @@ import ru.tsystems.railway.domain.Station;
 import ru.tsystems.railway.domain.Train;
 import ru.tsystems.railway.utils.HibernateUtil;
 
-import java.util.*;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 public class TrainDaoImpl extends RailwayDaoImpl implements TrainDao {
 
     @Override
     public Set<Train> searchTrain(Station departureStation, Station arrivalStation, Calendar fromDate, Calendar toDate) {
-        if (fromDate.compareTo(toDate) < 0) {
+        if (fromDate.compareTo(toDate) > 0) {
             return Collections.emptySet();
         }
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
@@ -40,7 +43,7 @@ public class TrainDaoImpl extends RailwayDaoImpl implements TrainDao {
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         Transaction tr = session.beginTransaction();
         try {
-            Query query = session.createQuery("select p from Ticket ticket join Passenger p where ticket.train = :train");
+            Query query = session.createQuery("select ticket.passenger from Ticket ticket where ticket.train = :train");
             query.setParameter("train", train);
             return new HashSet(query.list());
         } finally {

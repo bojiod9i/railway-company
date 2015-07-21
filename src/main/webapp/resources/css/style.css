@@ -1,0 +1,232 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    font-size: 100%
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    font: 13px/1.3 Arial, Helvetica, sans-serif;
+    color: #676767
+}
+
+*:focus {
+    outline: 0
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+    color: #eb690a;
+    text-decoration: underline
+}
+
+.wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    background: #dae2e4;
+}
+
+.tab-panel {
+    margin-top: 20px;
+    margin-left: 5%;
+    position: relative;
+    float: left;
+    width: 44%;
+}
+
+.form-box {
+    color: #006AB3;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    margin-top: 12px;
+    margin-left: 25px;
+    z-index: 50;
+    float: left;
+}
+
+.form-box h2 {
+    font-size: 18px;
+    padding: 0px 0px 10px 10px;
+}
+
+.form-row {
+    position: relative;
+    padding: 2px 0px 3px;
+}
+
+.form-label {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    padding-right: 11px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.label {
+    display: inline-block;
+    box-sizing: border-box;
+    padding-right: 11px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.form-field {
+    display: inline-block;
+}
+
+.input {
+    display: inline-block;
+    box-sizing: border-box;
+    background: #FDFDF9;
+    border-color: #B2E2F5;
+    border-radius: 5px;
+    width: 100%;
+    height: 32px;
+    margin: 5px 0px;
+    padding: 7px 10px;
+    vertical-align: middle;
+}
+
+.error-msg {
+    color: #f00;
+    font-size: 10px;
+    clear: both
+}
+
+.form-row .error-msg {
+    position: relative;
+    display: block;
+    margin-top: 1px;
+    text-align: center;
+    left: 0
+}
+
+.form_submit {
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 80%;
+}
+
+.btn-submit {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 0 0;
+    border: none;
+    background-color: #f6a828;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #333;
+    font-family: 'Verdana', Arial, sans-serif;
+    font-size: 14px;
+    text-shadow: #b2e2f5 0 1px 0;
+    padding: 5px;
+}
+
+.timetable {
+    width: 90%;
+    border-top: 1px solid #e5eff8;
+    border-right: 1px solid #e5eff8;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+.timetable tr {
+}
+
+.timetable td {
+    color: #678197;
+    border-bottom: 1px solid #e5eff8;
+    border-left: 1px solid #e5eff8;
+    padding: .3em 1em;
+    text-align: center;
+}
+
+.dialog {
+    height: 300px;
+    width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+tr.head {
+    font-weight: bold;
+}
+
+.infotable {
+    border: 1px solid #006AB3;
+    border-spacing: 4px 4px;
+    border-radius: 4px;
+    text-align: center;
+    font: 13px/1.3 Arial, Helvetica, sans-serif;
+    color: #006AB3;
+}
+
+.infotable tr, .infotable td {
+    border: 1px solid #006AB3;
+}
+
+.buy-btn {
+    background: #00A0D1;
+    background: -moz-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00A0D1), color-stop(100%, #008DB8));
+    background: -webkit-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -o-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -ms-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A0D1', endColorstr='#008DB8', GradientType=0);
+    padding: 5px 15px;
+    color: #cfebf3;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border: 1px solid #095B7E
+}
+
+.simple-btn {
+    background: #00A0D1;
+    background: -moz-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00A0D1), color-stop(100%, #008DB8));
+    background: -webkit-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -o-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: -ms-linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    background: linear-gradient(top, #00A0D1 0%, #008DB8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A0D1', endColorstr='#008DB8', GradientType=0);
+    padding: 5px 15px;
+    color: #cfebf3;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border: 1px solid #095B7E;
+    float: right;
+}
+
+.wide-form-box {
+    color: #006AB3;
+    overflow: hidden;
+    position: relative;
+    padding-top: 12px;
+    padding-left: 0px;
+    padding-bottom: 15%;
+    z-index: 50;
+    float: left;
+    width: 100%;
+}
+
+.frontElement {
+    position: relative;
+    z-index: 10000;
+}

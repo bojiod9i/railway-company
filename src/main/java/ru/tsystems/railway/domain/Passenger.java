@@ -19,6 +19,15 @@ public class Passenger extends AbstractDomainEntity {
     @Column(name = "BIRTHDAY")
     private Date birthday;
 
+    public Passenger() {
+    }
+
+    public Passenger(String firstName, String lastName, Date birthday) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+    }
+
     public String getFirstName() {
         return firstName;
     }

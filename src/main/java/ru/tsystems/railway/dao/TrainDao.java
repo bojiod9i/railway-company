@@ -9,5 +9,6 @@ import java.util.Set;
 
 public interface TrainDao extends RailwayDao {
     Set<Train> searchTrain(Station departureStation, Station arrivalStation, Calendar fromDate, Calendar toDate);
+
     Set<Passenger> getPassengerByTrain(Train train);
 }
